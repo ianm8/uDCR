@@ -1,13 +1,15 @@
 /*
+ * uDCR - Uses the Seeed XIAO RP2040
+ * Copyright 2023 Ian Mitchell VK7IAN
+ * Version 1.0
  * 
+ * Uses:
  * https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
  *
  * Libraries
  * =========
- *
  * https://github.com/pavelmc/Si5351mcu
  * https://github.com/brianlow/Rotary
- *
  *
  */
 
@@ -16,8 +18,6 @@
 #include <si5351mcu.h>
 #include "agc.h"
 
-//LED_BUILTIN
-//
 #define PIN_SDA    D4
 #define PIN_SCL    D5
 #define PIN_ENCBUT D2
@@ -37,7 +37,6 @@
 #define LONG_PRESS_TIME   3000u
 #define MIN_FREQUENCY     3500000ul
 #define MAX_FREQUENCY     15000000ul
-//#define XTAL_FREQ 26000000ul
 #define XTAL_FREQ         27000000ul
 #define DEC_PERIOD        200u
 
