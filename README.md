@@ -17,6 +17,7 @@ There are only two controls. A push-button and a rotary encoder. By default the 
 When the frequency changes the LED flashes the frequency as described in the code (loop1() function), that is, a long flash represents 5 and a shot flash represents one. The frequency is indicated to the nearest Khz. At other times the LED brightness reflects the signal strength.
 
 # PCB
+The PCB is 4 layers with dimensions 60mm by 40mm. The top layer comprises the RF and audio circuits and the bottom layer comprises the power distribution, voltage regulation and the microcontroller. The two inner layers a solid gound-plain only and provide shielding of the RF/audio circuitry from the digital circuitry. The XIAO board has an aluminium cover over the microcontroller chip which may or may not provide some shielding from digital noise but certainly does no harm.
 
 # Component Choices
 All resistors are 1% size 1206 thick film. All capacitors are ceramic size 1206 NP0, except the 1uF and 22uF capacitors which can be X7R. All inductors are size 1206 but the pads are sized such that 0806 size inductors can be used instead. The op-amp actually used in the prototype was a TL972 which worked very well.  
