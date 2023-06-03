@@ -19,4 +19,4 @@ When the frequency changes the LED flashes the frequency as described in the cod
 # PCB
 
 # Component Choices
-All resistors are 1% size 1206 thick film. All capactitors are ceramic size 1206 NP0, except the 1uF and 22uF capacitors which can be X7R. All inductors are size 1206 but the pads are sized such that 0806 size inductors can be used instead. The op-amp actually used in the prototype was a TL912 which worked very well.  
+All resistors are 1% size 1206 thick film. All capacitors are ceramic size 1206 NP0, except the 1uF and 22uF capacitors which can be X7R. All inductors are size 1206 but the pads are sized such that 0806 size inductors can be used instead. The op-amp actually used in the prototype was a TL972 which worked very well.  
