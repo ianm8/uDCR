@@ -1,8 +1,9 @@
 /*
  * uDCR - Uses the Seeed XIAO RP2040
  * Copyright 2023 Ian Mitchell VK7IAN
- * Version 1.0
- * 
+ * Version 1.1
+ *  1.1: Fixed AGC bug
+ *
  * Uses:
  * https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
  *
