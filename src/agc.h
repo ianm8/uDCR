@@ -2074,8 +2074,14 @@ namespace AGC
     volatile static uint32_t p = 0;
     const int32_t agc_dc = (int32_t)dc(sig);
     const uint32_t level = ((uint32_t)abs(agc_dc))<<9;
-    if (p) p--;
-    p = max(level,p);
+    if (level>p)
+    {
+      p = level;
+    }
+    else
+    {
+      if (p) p--;
+    }
     return p>>9;
   }
 
@@ -2084,7 +2090,8 @@ namespace AGC
     // given the signal peak value,
     // return the appropriate attenuation to
     // be subtracted from the volume PWM level
-    return agc_tab[peak & 0x7ff];
+    // watch out for the abs(-2048) edge case!
+    return agc_tab[min(peak,2047u)];
   }
 }
 #endif
