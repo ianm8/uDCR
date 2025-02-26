@@ -1,4 +1,7 @@
 # uDCR
+
+### A newer version is here: https://github.com/ianm8/uDCR2
+
 Micro direct conversion receiver covering 80m, 40m, 20m bands. Although it is continuously tunable from 3.5MHz to 15MHz the three nominated bands are easy to get to using the band change function. The receiver has fairly good large signal handling capability and an effective AGC mechanism. The controls consist of an LED (for frequency readout and signal level) and rotary encoder (for frequency and volume changes) and a pushbutton (used to change frequency step, band and volume setting in conjunction with the rotary encoder).
 
 # How does it work?
